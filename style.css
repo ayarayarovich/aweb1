@@ -36,6 +36,19 @@ body {
     border-left: 0;
     border-bottom: 0;
     border-right: 0;
+    animation: live-gradient 4s infinite ease;
+}
+
+@keyframes live-gradient {
+    0% {
+        border-image-source: linear-gradient(90deg, rgba(27, 31, 49, 0) 5%, #FF1744 15%, #1B1F31 85%, rgba(27, 31, 49, 0) 95%);
+    }
+    50% {
+        border-image-source: linear-gradient(90deg, rgba(27, 31, 49, 0) 5%, #FF1744 75%, #1B1F31 85%, rgba(27, 31, 49, 0) 95%);
+    }
+    100% {
+        border-image-source: linear-gradient(90deg, rgba(27, 31, 49, 0) 5%, #FF1744 15%, #1B1F31 85%, rgba(27, 31, 49, 0) 95%);
+    }
 }
 
 .section__images {
