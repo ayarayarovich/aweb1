@@ -7,7 +7,7 @@
 :root {
     --main-background-color: #0E1019;
     --main-background-color-light: #1B1F31;
-    --main-background-color-lightest: #2E3452;
+    --main-accent-color: #FF1744;
 }
 
 .container {
@@ -32,7 +32,7 @@ body {
 .section + .section {
     border: 6px solid;
     border-image-slice: 1;
-    border-image-source: linear-gradient(90deg, rgba(27, 31, 49, 0) 5%, #FF1744 15%, #1B1F31 85%, rgba(27, 31, 49, 0) 95%);
+    border-image-source: linear-gradient(90deg, rgba(27, 31, 49, 0) 5%, var(--main-accent-color) 15%, #1B1F31 85%, rgba(27, 31, 49, 0) 95%);
     border-left: 0;
     border-bottom: 0;
     border-right: 0;
@@ -41,13 +41,13 @@ body {
 
 @keyframes live-gradient {
     0% {
-        border-image-source: linear-gradient(90deg, rgba(27, 31, 49, 0) 5%, #FF1744 15%, #1B1F31 85%, rgba(27, 31, 49, 0) 95%);
+        border-image-source: linear-gradient(90deg, rgba(27, 31, 49, 0) 5%, var(--main-accent-color) 15%, #1B1F31 85%, rgba(27, 31, 49, 0) 95%);
     }
     50% {
-        border-image-source: linear-gradient(90deg, rgba(27, 31, 49, 0) 5%, #FF1744 75%, #1B1F31 85%, rgba(27, 31, 49, 0) 95%);
+        border-image-source: linear-gradient(90deg, rgba(27, 31, 49, 0) 5%, var(--main-accent-color) 75%, #1B1F31 85%, rgba(27, 31, 49, 0) 95%);
     }
     100% {
-        border-image-source: linear-gradient(90deg, rgba(27, 31, 49, 0) 5%, #FF1744 15%, #1B1F31 85%, rgba(27, 31, 49, 0) 95%);
+        border-image-source: linear-gradient(90deg, rgba(27, 31, 49, 0) 5%, var(--main-accent-color) 15%, #1B1F31 85%, rgba(27, 31, 49, 0) 95%);
     }
 }
 
@@ -68,7 +68,7 @@ body {
 
 .section__command {
     font-family: 'JetBrains Mono', monospace;
-    color: #ff1744;
+    color: var(--main-accent-color);
     font-weight: 500;
     font-size: 1.5rem;
 }
@@ -101,5 +101,5 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--main-background-color-lightest);
+    background-color: var(--main-accent-color);
 }
