@@ -32,7 +32,7 @@ body {
 .section + .section {
     border: 6px solid;
     border-image-slice: 1;
-    border-image-source: linear-gradient(90deg, rgba(27, 31, 49, 0) 5%, #1B1F31 15%, #1B1F31 85%, rgba(27, 31, 49, 0) 95%);
+    border-image-source: linear-gradient(90deg, rgba(27, 31, 49, 0) 5%, #FF1744 15%, #1B1F31 85%, rgba(27, 31, 49, 0) 95%);
     border-left: 0;
     border-bottom: 0;
     border-right: 0;
